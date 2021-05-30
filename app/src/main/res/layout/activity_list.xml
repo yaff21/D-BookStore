@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".activity_list">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnhome"
+                android:src="@drawable/back"
+                android:background="@color/teal_700"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"/>
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:elevation="3dp"
+            app:cardCornerRadius="3dp"
+            android:focusable="true"
+            app:cardBackgroundColor="@color/colorPrimary">
+
+            <LinearLayout
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/helveticabold"
+                        android:text="D-Book Store"
+                        android:textColor="#fff"
+                        android:textSize="35dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  Book List"
+                        android:textColor="#fff"
+                        android:textSize="20dp"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/book_shelf_100px"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:rowCount="4"
+            android:columnCount="2"
+            android:layout_marginBottom="22dp"
+            android:layout_margin="15dp"
+            android:alignmentMode="alignMargins"
+            android:layout_gravity="center_horizontal"
+            android:columnOrderPreserved="false">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="95dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="@color/white">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="20dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageButton
+                        android:id="@+id/laskarpelangi"
+                        android:src="@drawable/laskarpelangi"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:textSize="13sp"
+                        android:text="Laskar Pelangi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="55dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="@color/white">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageButton
+                        android:id="@+id/mrestaurant"
+                        android:src="@drawable/mrestaurant"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:textSize="13sp"
+                        android:text="Midnight Restautant"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="55dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="@color/white">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageButton
+                        android:id="@+id/matahari"
+                        android:src="@drawable/matahari"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:textSize="13sp"
+                        android:text="Matahari"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="95dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="@color/white">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageButton
+                        android:id="@+id/kekang"
+                        android:src="@drawable/kekang"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:textSize="13sp"
+                        android:text="KEKANG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="95dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="@color/white">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageButton
+                        android:id="@+id/tikungan"
+                        android:src="@drawable/tikunganmaut"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:textSize="13sp"
+                        android:text="Tikungan Maut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="55dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="@color/white">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageButton
+                        android:id="@+id/uburubur"
+                        android:src="@drawable/uburubur"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:textSize="13sp"
+                        android:text="Ubur Ubur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textStyle="italic"
+            android:text="Apk v.0.0.0.1"/>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context="UburUbur">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ubur-Ubur Lembur"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+
+            <View
+                android:layout_width="280dp"
+                android:layout_height="6dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/back"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="200dp"
+        android:src="@drawable/mrestaurant"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:id="@+id/judul"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:text="Ubur-Ubur Lembur"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintLeft_toRightOf="parent"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:id="@+id/penerbit"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:text="Penerbit : Gagas Media"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:id="@+id/penulis"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:text="Penulis : Raditya Dika"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:id="@+id/rilis"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:text="Rilis : 2018"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/desc"
+        android:textStyle="italic"
+        android:text="Sinopsis  :"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/sinopsis"
+        android:textStyle="italic"
+        android:text="      Ubur-ubur Lembur adalah buku komedi Raditya Dika. Bercerita tentang pengalamannya belajar hidup dari apa yang dia cintai, sambil menemukan hal remeh untuk ditertawakan di sepanjang perjalanan.
+Seluruh bab di dalamnya diangkat dari kisah nyata.
+"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/buyubur"
+            android:background="@color/purple_700"
+            android:layout_width="125dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15sp"
+            android:alignmentMode="alignMargins"
+            android:layout_gravity="center_horizontal"
+            android:text="Rp.75.000"
+            android:textSize="15sp"
+            android:textColor="#ffff"/>
+        <Button
+            android:id="@+id/backubur"
+            android:background="@color/purple_700"
+            android:layout_width="125dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:alignmentMode="alignMargins"
+            android:layout_gravity="center_horizontal"
+            android:text="Back"
+            android:textSize="15sp"
+            android:textColor="#ffff"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bintang4"/>
+    </LinearLayout>
+
+
+</LinearLayout>

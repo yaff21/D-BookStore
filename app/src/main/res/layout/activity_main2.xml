@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient3"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HOME"
+                android:fontFamily="@font/helveticabold"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="25dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:background="@color/LightBlue"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/helveticabold"
+                android:text="Welcome To D-Book Store"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:background="@color/LightBlue"/>
+
+
+        </LinearLayout>
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+<!--        </LinearLayout>-->
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:elevation="3dp"
+        app:cardCornerRadius="3dp"
+        android:focusable="true"
+        app:cardBackgroundColor="@color/black">
+
+        <LinearLayout
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:fontFamily="@font/helveticabold"
+                    android:text="D-Book Store"
+                    android:textColor="#fff"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/helveticabold"
+                    android:text="  Indonesia  Cerdas  Group"
+                    android:textColor="#fff"
+                    android:textSize="13dp"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/reading_60px" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="20dp"
+            android:elevation="3dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="List"
+                    android:textSize="18dp"
+                    android:textColor="@color/purple_700"
+                    android:textStyle="bold"/>
+
+                <ImageButton
+                    android:id="@+id/listbuku"
+                    android:layout_width="120dp"
+                    android:layout_height="90dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="28dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="@color/white"
+                    android:src="@drawable/books_100px" />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="20dp"
+            android:elevation="3dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Location"
+                    android:textSize="18dp"
+                    android:textColor="@color/purple_700"
+                    android:textStyle="bold"/>
+
+                <ImageButton
+                    android:id="@+id/location"
+                    android:layout_width="120dp"
+                    android:layout_height="95dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="28dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="@color/white"
+                    android:src="@drawable/address_100px" />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="20dp"
+            android:elevation="3dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bug Report"
+                    android:textSize="18dp"
+                    android:textColor="@color/purple_700"
+                    android:textStyle="bold"/>
+
+                <ImageButton
+                    android:id="@+id/rating"
+                    android:layout_width="120dp"
+                    android:layout_height="90dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="28dp"
+                    android:layout_marginRight="28dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="@color/white"
+                    android:src="@drawable/bug_100px" />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="20dp"
+            android:elevation="3dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CS Service"
+                    android:textSize="18dp"
+                    android:textColor="@color/purple_700"
+                    android:textStyle="bold"/>
+
+                <ImageButton
+                    android:id="@+id/cs"
+                    android:layout_width="120dp"
+                    android:layout_height="90dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="28dp"
+                    android:layout_marginRight="28dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="@color/white"
+                    android:src="@drawable/technical_support_100px" />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textStyle="italic"
+        android:text="Apk v.0.0.0.1"/>
+    <View
+        android:layout_width="320dp"
+        android:layout_height="6dp"
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="center"
+        android:background="@color/LightBlue"/>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="LOGOUT"
+        app:backgroundTint="@color/DarkBlue"
+        app:icon="@drawable/exit_30px" />
+
+<!--    <ImageButtonButton-->
+<!--        android:id="@+id/backlaskar"-->
+<!--        android:layout_width="125dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:layout_marginLeft="15dp"-->
+<!--        android:alignmentMode="alignMargins"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:textSize="15sp"-->
+<!--        android:textColor="#ffff"/>-->
+
+</LinearLayout>
